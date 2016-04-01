@@ -243,40 +243,18 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
-.categories {
-    float: left;
-    width: 100%;
-    margin: 0px 0 10px;
-    position: relative;
-    overflow: hidden;
-    background: #fafafa;
+* {
+  margin: 0;
+  padding: 0;
 }
-.categories::before {
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: #ccc;
-    position: absolute;
-    top: 0;
-    left: 0;
+ 
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: #333;
 }
-.categories > ul {
-    float: left !important;
-    width: 102% !important;
-    height: 43px;
-    overflow: hidden;
-    list-style: none;
-    position: relative;
-}
-.categories > ul li.homepage {
-    border-color: #00AEE8;
-    margin-right: -2px;
-}
-.categories > ul li.blue, .categories > ul li.xa-hoi, .categories > ul li.the-gioi, .categories > ul li.thi-truong, .categories > ul li.phap-luat {
-    border-color: #00AEE8;
-}
-.categories .subcate {
-    display: none;
-    float: left;
-    width: 100%;
+#menu ul {
+  background: #1F568B;
+  list-style-type: none;
+  text-align: center;
 }
