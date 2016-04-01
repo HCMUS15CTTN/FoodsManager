@@ -260,11 +260,10 @@ body {
 }
 #menu li {
   color: #f1f1f1;
-  display: inline-block;
+  float: left;
   width: 120px;
   height: 40px;
   line-height: 40px;
-  margin-left: -5px;
 }
 #menu ul {
   background: #1F568B;
