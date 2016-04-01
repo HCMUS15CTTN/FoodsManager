@@ -243,12 +243,6 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
-/*==Reset CSS==*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /*==Style cơ bản cho website==*/
 body {
   font-family: sans-serif;
