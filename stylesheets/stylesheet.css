@@ -258,3 +258,26 @@ body {
   list-style-type: none;
   text-align: center;
 }
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#menu ul {
+  background: #1F568B;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
