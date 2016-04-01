@@ -280,3 +280,19 @@ body {
   background: #F1F1F1;
   color: #333;
 }
+.sub-menu li {
+  display: none;
+}
+#menu li {
+ position: relative;
+}
+.sub-menu {
+ display: none;
+ position: absolute;
+}
+#menu li:hover .sub-menu {
+ display: block;
+}
+.sub-menu li {
+ margin-left: 0 !important;
+}
