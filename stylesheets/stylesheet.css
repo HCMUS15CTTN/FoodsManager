@@ -251,3 +251,32 @@ a {
     overflow: hidden;
     background: #fafafa;
 }
+.categories::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.categories > ul {
+    float: left !important;
+    width: 102% !important;
+    height: 43px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+}
+.categories > ul li.homepage {
+    border-color: #00AEE8;
+    margin-right: -2px;
+}
+.categories > ul li.blue, .categories > ul li.xa-hoi, .categories > ul li.the-gioi, .categories > ul li.thi-truong, .categories > ul li.phap-luat {
+    border-color: #00AEE8;
+}
+.categories .subcate {
+    display: none;
+    float: left;
+    width: 100%;
+}
