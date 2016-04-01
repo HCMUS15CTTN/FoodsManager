@@ -243,16 +243,19 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+/*==Reset CSS==*/
 * {
   margin: 0;
   padding: 0;
 }
- 
+
 /*==Style cơ bản cho website==*/
 body {
   font-family: sans-serif;
   color: #333;
 }
+
+/*==Style cho menu===*/
 #menu ul {
   background: #1F568B;
   list-style-type: none;
@@ -260,16 +263,11 @@ body {
 }
 #menu li {
   color: #f1f1f1;
-  float: left;
+  display: inline-block;
   width: 120px;
   height: 40px;
   line-height: 40px;
-}
-#menu ul {
-  background: #1F568B;
-  list-style-type: none;
-  overflow: hidden;
-  width: 100%;
+  margin-left: -5px;
 }
 #menu a {
   text-decoration: none;
@@ -280,19 +278,23 @@ body {
   background: #F1F1F1;
   color: #333;
 }
-.sub-menu li {
+
+/*==Dropdown Menu==*/
+.sub-menu {
   display: none;
+  position: absolute;
 }
 #menu li {
- position: relative;
-}
-.sub-menu {
- display: none;
- position: absolute;
+  position: relative;
 }
 #menu li:hover .sub-menu {
- display: block;
+  display: block;
 }
 .sub-menu li {
- margin-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-menu > ul {
+  display: none !mportant;
 }
