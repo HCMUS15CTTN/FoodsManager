@@ -284,10 +284,10 @@ body {
   position: relative;
 }
 #menu li:hover .sub-menu {
-  display: block;
+  /*display: block;*/
 }
 .sub-menu li {
-  margin-left: -10 !important;
+  margin-left: 0 !important;
 }
 
 /*==Menu cấp 3==*/
