@@ -261,7 +261,7 @@ body {
   width: 180px;
   height: 40px;
   line-height: 40px;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 #menu a {
   text-decoration: none;
