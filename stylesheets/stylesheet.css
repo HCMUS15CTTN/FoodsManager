@@ -292,10 +292,10 @@ body {
 }
 .sub-menu li {
   margin-left: 0 !important;
-  width:300;
 }
 
 /*==Menu cấp 3==*/
 .sub-menu > ul {
   display: none !mportant;
+  width:300;
 }
