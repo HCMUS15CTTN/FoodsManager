@@ -243,13 +243,11 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
-/*==Style cơ bản cho website==*/
+
 body {
   font-family: sans-serif;
-  color: #333;
 }
 
-/*==Style cho menu===*/
 #menu ul {
   background: #1F568B;
   list-style-type: none;
@@ -261,7 +259,6 @@ body {
   width: 180px;
   height: 40px;
   line-height: 40px;
-  margin-left: 0px;
 }
 #menu a {
   text-decoration: none;
@@ -274,11 +271,12 @@ body {
   color: #333;
 }
 
-/*==Dropdown Menu==*/
 .sub-menu {
   display: none;
   position: absolute;
-  /*z-index: 90;*/
+  left: 250px;
+ top: 0;
+ display: none;
 }
 #menu li {
   position: relative;
@@ -287,10 +285,9 @@ body {
   display: block;
 }
 .sub-menu li {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
-/*==Menu cấp 3==*/
 .sub-menu > ul {
-  display: none !mportant;
+  display: none;
 }
