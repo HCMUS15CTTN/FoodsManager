@@ -274,7 +274,6 @@ body {
 #menu .sub-menu {
   display: none;
   position: absolute;
-  left: 250px;
 }
 #menu li {
   position: relative;
@@ -283,7 +282,7 @@ body {
   display: block;
 }
 .sub-menu li {
-  margin-left: 0;
+  margin-left: -20;
 }
 
 .sub-menu > ul {
