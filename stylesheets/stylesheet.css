@@ -295,6 +295,6 @@ body {
 }
 
 /*==Menu cấp 3==*/
-.sub-menu > ul {
+.sub-menu > pp {
   display: none !mportant;
 }
