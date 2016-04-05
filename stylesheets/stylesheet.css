@@ -260,7 +260,7 @@ body {
   display: inline-block;
   width: 180px;
   height: 40px;
-  line-height: 40px;
+  /*line-height: 40px;*/
   padding: 0 1em;
 }
 #menu li a {
