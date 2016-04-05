@@ -251,6 +251,8 @@ body {
 #menu ul {
   background: #1F568B;
   list-style-type: none;
+  padding: 0;
+  width: 250px;
   text-align: center;
 }
 #menu li {
@@ -259,6 +261,7 @@ body {
   width: 180px;
   height: 40px;
   line-height: 40px;
+  padding: 0 1em;
 }
 #menu a {
   text-decoration: none;
@@ -273,8 +276,9 @@ body {
 
 #menu .sub-menu {
   display: none;
+  left: 250px;
+  top: 0;
   position: absolute;
-  margin-left: -10;
 }
 #menu li {
   position: relative;
