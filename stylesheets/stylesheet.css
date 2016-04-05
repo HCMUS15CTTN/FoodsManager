@@ -278,14 +278,13 @@ body {
 .sub-menu {
   display: none;
   position: absolute;
-  z-index: 90;
+  /*z-index: 90;*/
 }
 #menu li {
   position: relative;
 }
 #menu li:hover .sub-menu {
   display: block;
-  width:300;
 }
 .sub-menu li {
   margin-left: 0 !important;
