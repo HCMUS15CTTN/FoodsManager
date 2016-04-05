@@ -289,6 +289,7 @@ body {
 }
 #menu li:hover .sub-menu {
   display: block;
+  width:300;
 }
 .sub-menu li {
   margin-left: 0 !important;
@@ -297,5 +298,4 @@ body {
 /*==Menu cấp 3==*/
 .sub-menu > ul {
   display: none !mportant;
-  width:300;
 }
