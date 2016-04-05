@@ -298,6 +298,4 @@ body {
 .sub-menu > ul {
   display: none !mportant;
   position: absolute;
-  top: 41px;
-  left: 0px;
 }
