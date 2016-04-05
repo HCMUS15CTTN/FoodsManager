@@ -263,7 +263,7 @@ body {
   line-height: 40px;
   padding: 0 1em;
 }
-#menu a {
+#menu li a {
   text-decoration: none;
   text-align: center;
   color: #fff;
