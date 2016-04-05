@@ -244,15 +244,21 @@ a {
   .site-footer {
     font-size: 0.9rem; } }
 
-body {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+/*==Style cơ bản cho website==*/
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/*==Style cho menu===*/
 #menu ul {
   background: #1F568B;
   list-style-type: none;
-  padding: 0;
-  width: 250px;
   text-align: center;
 }
 #menu li {
@@ -260,12 +266,11 @@ body {
   display: inline-block;
   width: 180px;
   height: 40px;
-  /*line-height: 40px;*/
-  padding: 0 1em;
+  line-height: 40px;
+  margin-left: -5px;
 }
-#menu li a {
+#menu a {
   text-decoration: none;
-  text-align: center;
   color: #fff;
   display: block;
 }
@@ -274,10 +279,9 @@ body {
   color: #333;
 }
 
-#menu .sub-menu {
+/*==Dropdown Menu==*/
+.sub-menu {
   display: none;
-  left: 250px;
-  top: 0;
   position: absolute;
 }
 #menu li {
@@ -287,9 +291,10 @@ body {
   display: block;
 }
 .sub-menu li {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
+/*==Menu cấp 3==*/
 .sub-menu > ul {
-  display: none;
+  display: none !mportant;
 }
