@@ -271,12 +271,11 @@ body {
   color: #333;
 }
 
-.sub-menu {
+#menu .sub-menu {
   display: none;
   position: absolute;
   left: 250px;
- top: 0;
- display: none;
+  top: 0;
 }
 #menu li {
   position: relative;
