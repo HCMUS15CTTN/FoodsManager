@@ -283,6 +283,7 @@ body {
 .sub-menu {
   display: none;
   position: absolute;
+  z-index: 90;
 }
 #menu li {
   position: relative;
