@@ -50,14 +50,21 @@
   <hr>
   <center><p>Đang cập nhật</p></center>
   <hr>
+  <script>
+    function submit(){
+      var height = document.getElementById('height');
+      var weight = document.getElementById('weight');
+      getElementById('result').innerHTML=;
+    }
+  </script>
   <form action="chisoBMI.html" method="post">
     Chiều cao (cm): <br>
-    <input type="text" name="height">
+    <input type="text" name="height" id="height">
     <br>
     Cân nặng (kg): <br>
-    <input type="text" name="weight">
+    <input type="text" name="weight" id="weight">
     <br>
-    <button type='button' onclick="getElementById('result').innerHTML=true">submit</button> 
+    <button type='button' onclick="submit();">submit</button> 
     <br>
   </form>
   <p id="result"></p>
