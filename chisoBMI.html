@@ -52,9 +52,9 @@
   <hr>
   <script>
     function submit(){
-      var height = document.getElementById('height');
-      var weight = document.getElementById('weight');
-      getElementById('result').innerHTML=;
+      var height = document.getElementById('height').value;
+      var weight = document.getElementById('weight').value;
+      getElementById('result').innerHTML=weight*10000/(height*height);
     }
   </script>
   <form action="chisoBMI.html" method="post">
