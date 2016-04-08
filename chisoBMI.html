@@ -52,18 +52,23 @@
   <hr>
   <?php
   $BMI=$weight*10000/($weight*$weight);
-  <form action="">
+  <form action="chisoBMI" method="post">
     Chiều cao (cm): <br>
-    <input text="text" name="height" value=height>
+    <input type="text" name="height" value=height>
     <br>
     Cân nặng (kg): <br>
-    <input text="text" name="weight" value=weight>
+    <input type="text" name="weight" value=weight>
     <br>
-    BMI: <br>
-    <input text="text" name="BMI" value="BMI" readonly>
+    <input type="submit" name="Kiểm tra">
     <br>
     </form>
   </form>
+  if(isset($_POST['chisoBMI'])){
+    $h=$_POST['height'];
+    $w=$_POST['weight'];
+    $b=$w*10000/($h*$h);
+    echo "Chỉ số BMI của bạn là:".$h;
+  }
   ?>
   <footer class="site-footer">
     <span class="site-footer-owner"><a href="https://github.com/HCMUS15CTTN/FoodsManager">Foodsmanager</a> is maintained by <a href="https://github.com/HCMUS15CTTN">HCMUS15CTTN</a>.</span>
