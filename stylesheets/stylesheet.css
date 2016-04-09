@@ -301,6 +301,10 @@ body {
 }
 input[type=text] {
     padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 2px solid #159957;
+    border-radius: 4px;
 }
