@@ -310,7 +310,7 @@ input[type=text] {
 }
 
 .form {
-  background: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsApEyOS7juDv4LVg-sqGPmzVPgYcbaiVViHLy4KNDzKkBB0RpnA;
+  background: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsApEyOS7juDv4LVg-sqGPmzVPgYcbaiVViHLy4KNDzKkBB0RpnA";
   border-radius: 4px;
   border: 1px solid #ddd;
   margin: 5px 0;
