@@ -44,62 +44,59 @@
   </marquee>
   
   <hr>
-  
-  <h2 style="font-family:times new roman;color:blue;font-size:40px;"><center><strong>Chỉ số BMI</strong></strong></center></h2>
-
-  <hr>
-  <center><p>Đang cập nhật</p>
-  <hr>
-  <form action="chisoBMI.html" method="post">
-    Chiều cao (cm): <br>
-    <input type="text" name="height" id="height">
-    <br>
-    Cân nặng (kg): <br>
-    <input type="text" name="weight" id="weight">
-    <br>
-    Giới tính:
-    <br>
-    <select name="gioitinh" id="gioitinh">
-      <option value="0">Nam</option>
-      <option value="1">Nữ</option>
-    </select>
-    <br>
-    Loại lao động:
-    <br>
-    <select name="doituong" id="doituong">
-      <option value="0">Lao động nhẹ</option>
-      <option value="1">Lao động vừa</option>
-      <option value="2">Lao động nặng</option>
-    </select>
-    <br>
-    <button type='button' onclick="
-      var height = document.getElementById('height').value;
-      var weight = document.getElementById('weight').value;
-      if (weight*height>0)
-      {
-        getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
-        var iweight,basic_energy,energy;
-        var selector = document.getElementById('gioitinh');
-        var gt = selector[selector.selectedIndex].value;
-        selector = document.getElementById('doituong');
-        var doituong = selector[selector.selectedIndex].value;
-        if (gt == 0) {
+  <div class="form">
+    <h2 style="font-family:times new roman;color:blue;font-size:40px;"><center><strong>Chỉ số BMI</strong></strong></center></h2>
+    <form action="chisoBMI.html" method="post">
+      Chiều cao (cm): <br>
+      <input type="text" name="height" id="height">
+      <br>
+      Cân nặng (kg): <br>
+      <input type="text" name="weight" id="weight">
+      <br>
+      Giới tính:
+      <br>
+      <select name="gioitinh" id="gioitinh">
+        <option value="0">Nam</option>
+        <option value="1">Nữ</option>
+      </select>
+      <br>
+      Loại lao động:
+      <br>
+      <select name="doituong" id="doituong">
+        <option value="0">Lao động nhẹ</option>
+        <option value="1">Lao động vừa</option>
+        <option value="2">Lao động nặng</option>
+      </select>
+      <br>
+      <button type='button' onclick="
+        var height = document.getElementById('height').value;
+        var weight = document.getElementById('weight').value;
+        if (weight*height>0)
+        {
+          getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
+          var iweight,basic_energy,energy;
+          var selector = document.getElementById('gioitinh');
+          var gt = selector[selector.selectedIndex].value;
+          selector = document.getElementById('doituong');
+          var doituong = selector[selector.selectedIndex].value;
+          if (gt == 0) {
             iweight=21*(height*height)/10000;
             basic_energy= (15.3 * iweight + 679);
             energy=((doituong==0)?1.55:((doituong==1)?1.78:2.1))*basic_energy;
           }
-        else if (gt == 1)
+          else if (gt == 1)
           {
             iweight=19*(height*height)/10000;
             basic_energy = (12.2 * iweight + 746);
             energy=((doituong==0)?1.56:((doituong==1)?1.61:1.82))*basic_energy;
           }
-        getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight)+' kg';
-        getElementById('needed').innerHTML='Nhu cầu năng lượng hằng ngày của bạn là '+parseInt(energy)+' Kcal';
-      }
-      ">Submit</button> 
-    <br>
-  </form>
+          getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight)+' kg';
+          getElementById('needed').innerHTML='Nhu cầu năng lượng hằng ngày của bạn là '+parseInt(energy)+' Kcal';
+        }
+        ">Submit</button> 
+      <br>
+    </form>
+  </div>
   <p id="result"></p>
   <p id="alert"></p>
   <p id="needed"></p>
