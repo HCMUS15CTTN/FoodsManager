@@ -78,8 +78,10 @@
       {
         getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
         var iweight,basic_energy,energy;
-        gt = document.getElementById('gioitinh').value;
-        doituong = document.getElementById('doituong').value;
+        var selector = document.getElementById('gioitinh');
+        var gt = selector[selector.selectedIndex].value;
+        selector = document.getElementById('doituong');
+        var doituong = selector[selector.selectedIndex].value;
         if (gt == 0) {
             energy=21*(height*height)/10000;
             basic_energy= (15.3 * iweight + 679);
