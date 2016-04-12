@@ -70,12 +70,33 @@
       <button type='button' onclick="
         funcion round(x) {
           return parseInt(x*100)/100;
-        }
+        };
         var height = document.getElementById('height').value;
         var weight = document.getElementById('weight').value;
         if (weight*height>0)
         {
-          
+          getElementById('result').innerHTML='Chỉ số BMI là '+round(weight*10000/(height*height));
+          var iweight,basic_energy,energy;
+          var selector = document.getElementById('gioitinh');
+          var gt = selector[selector.selectedIndex].value;
+          selector = document.getElementById('doituong');
+          var doituong = selector[selector.selectedIndex].value;
+          if (gt == 0) {
+            iweight=21*(height*height)/10000;
+            basic_energy= (15.3 * iweight + 679);
+            energy=((doituong==0)?1.55:((doituong==1)?1.78:2.1))*basic_energy;
+          }
+          else if (gt == 1)
+          {
+            iweight=19*(height*height)/10000;
+            basic_energy = (12.2 * iweight + 746);
+            energy=((doituong==0)?1.56:((doituong==1)?1.61:1.82))*basic_energy;
+          }
+          getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+round(iweight)+' kg';
+          getElementById('needed').innerHTML='Nhu cầu năng lượng hằng ngày của bạn là '+round(energy)+' Kcal';
+          getElementById('protein').innerHTML='Nhu cầu protein của bạn là '+round(iweight)+' - '+round(1.5*iweight)+' g/ngày';
+          getElementById('lipit').innerHTML='Nhu cầu lipit hằng ngày của bạn là '+round(0.7*iweight)+' - '+round(2*iweight)+' g/ngày';
+          getElementById('glucid').innerHTML='Nhu cầu glucid hằng ngày của bạn là '+round(5*iweight)+' - '+round(7*iweight)+' g/ngày';
         }
         ">Submit</button> 
       <br>
