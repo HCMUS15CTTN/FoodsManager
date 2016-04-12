@@ -86,13 +86,13 @@
         if (gt == 0) {
             iweight=21*(height*height)/10000;
             basic_energy= (15.3 * iweight + 679);
-            energy=(doituong==0)?1.55:((doituong==1)?1.78:2.1);
+            energy=((doituong==0)?1.55:((doituong==1)?1.78:2.1))*basic_energy;
           }
         else if (gt == 1)
           {
             iweight=19*(height*height)/10000;
             basic_energy = (12.2 * iweight + 746);
-            energy=(doituong==0)?1.56:((doituong==1)?1.61:1.82);
+            energy=((doituong==0)?1.56:((doituong==1)?1.61:1.82))*basic_energy;
           }
         getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight);
         getElementById('needed').innerHTML='Nhu cầu năng lượng hằng ngày của bạn là '+parseInt(energy);
