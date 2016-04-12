@@ -77,17 +77,19 @@
       if (weight*height>0)
       {
         getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
-        var iweight=22*(height*height)/10000;
+        var iweight;
         getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight);
         var basic_energy,energy;
             gt = document.getElementById('gioitinh').value;
             doituong =document.getElementById('doituong').value;
         if (gt==0) {
+            energy=21*(height*height)/10000;
             basic_energy= (15.3 * iweight + 679);
             energy=(doituong==0)?1.55:((doituong==1)?1.78:2.1);
           }
         else if (gt == 1)
           {
+            energy=19*(height*height)/10000;
             basic_energy = (12.2 * iweight + 746);
             energy=(doituong==0)?1.56:((doituong==1)?1.61:1.82);
           }
