@@ -72,12 +72,15 @@
       <option value="2">Lao động nặng</option>
     </select>
     <br>
-    <button type='button' onclick="var height = document.getElementById('height').value;
+    <button type='button' onclick="
+      var height = document.getElementById('height').value;
       var weight = document.getElementById('weight').value;
       if (weight*height>0)
       {
         getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
-        var iweight,basic_energy,energy;
+        var iweight;
+        var basic_energy;
+        var energy;
         var selector = document.getElementById('gioitinh');
         var gt = selector[selector.selectedIndex].value;
         selector = document.getElementById('doituong');
