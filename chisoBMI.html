@@ -91,6 +91,9 @@
           }
           getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight)+' kg';
           getElementById('needed').innerHTML='Nhu cầu năng lượng hằng ngày của bạn là '+parseInt(energy)+' Kcal';
+          getElementById('protein').innerHTML='Nhu cầu protein của bạn là '+iweight+' - '+1.5*iweight+' g/ngày';
+          getElementById('lipit').innerHTML='Nhu cầu lipit hằng ngày của bạn là '+0.7*iweight+' - '+2*iweight+' g/ngày';
+          getElementById('glucid').innerHTML='Nhu cầu glucid hằng ngày của bạn là '+5*iweight+' - '+7*iweight+' g/ngày';
         }
         ">Submit</button> 
       <br>
@@ -98,6 +101,9 @@
   <p id="result"></p>
   <p id="alert"></p>
   <p id="needed"></p>
+  <p id="protein"></p>
+  <p id="lipit"></p>
+  <p id="glucid"></p>
   </center>
   <br>
   <footer class="site-footer">
