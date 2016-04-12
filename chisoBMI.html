@@ -57,13 +57,47 @@
     Cân nặng (kg): <br>
     <input type="text" name="weight" id="weight">
     <br>
+    Giới tính:
+    <br>
+    <select name="gioitinh" id="gioitinh">
+      <option value="0">Nam</option>
+      <option value="1">Nữ</option>
+    </select>
+    <br>
+    Loại lao động:
+    <br>
+    <select name="doituong" id="doituong">
+      <option value="0">Lao động nhẹ</option>
+      <option value="1">Lao động vừa</option>
+      <option value="2">Lao động nặng</option>
+    </select>
+    <br>
     <button type='button' onclick="var height = document.getElementById('height').value;
       var weight = document.getElementById('weight').value;
       if (weight*height>0)
-      getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;">Tính BMI</button> 
+      {
+        getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
+        var iweight=22*(height*height)/10000;
+        getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight);
+        var basic_energy,energy;
+            gt = document.getElementById('gioitinh').value;
+            doituong =document.getElementById('doituong').value;
+        if (gt==0) {
+            basic_energy= (15.3 * iweight + 679);
+            energy=(doituong==0)?1.55:((doituong==1)?1.78:2.1);
+          }
+        else if (gt == 1)
+          {
+            basic_energy = (12.2 * iweight + 746);
+            energy=(doituong==0)?1.56:((doituong==1)?1.61:1.82);
+          }
+      }
+      ">Submit</button> 
     <br>
   </form>
   <p id="result"></p>
+  <br>
+  <p id="alert"></p>
   </center>
   <br>
   <footer class="site-footer">
