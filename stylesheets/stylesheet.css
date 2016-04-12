@@ -312,7 +312,6 @@ input[type=text] {
 .form {
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhFbLl-jQ-U0YYoq9varcyV6A-vJJpQeW43lCrqbSSyIuTDcJBmQ");
   background-repeat:no-repeat;
-  width: 500;
   border-radius: 4px;
   border: 1px solid #159957;
 }
