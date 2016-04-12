@@ -78,9 +78,7 @@
       if (weight*height>0)
       {
         getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
-        var iweight;
-        var basic_energy;
-        var energy;
+        var iweight,basic_energy,energy;
         var selector = document.getElementById('gioitinh');
         var gt = selector[selector.selectedIndex].value;
         selector = document.getElementById('doituong');
@@ -96,7 +94,7 @@
             basic_energy = (12.2 * iweight + 746);
             energy=(doituong==0)?1.56:((doituong==1)?1.61:1.82);
           }
-        getElementById('alert').innerHTML=Cân nặng bạn cần đạt được là '+parseInt(iweight);
+        getElementById('alert').innerHTML='Cân nặng bạn cần đạt được là '+parseInt(iweight);
       }
       ">Submit</button> 
     <br>
