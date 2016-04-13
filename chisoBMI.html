@@ -68,15 +68,11 @@
       </select>
       <br>
       <button type='button' onclick="
-        var round=funcion(x) {
-          var y=parseInt(x*100)/100;
-          return y;
-        };
         var height = document.getElementById('height').value;
         var weight = document.getElementById('weight').value;
         if (weight*height>0)
         {
-          getElementById('result').innerHTML='Chỉ số BMI là '+round(weight*10000/(height*height));
+          getElementById('result').innerHTML='Chỉ số BMI là '+parseInt(weight*10000/(height*height)*100)/100;
           var iweight,basic_energy,energy;
           var selector = document.getElementById('gioitinh');
           var gt = selector[selector.selectedIndex].value;
