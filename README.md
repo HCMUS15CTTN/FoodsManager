@@ -1,1 +1,1 @@
-http://hcmus15cttn.github.io/FoodsManager/quytrinh.html
+http://hcmus15cttn.github.io/FoodsManager/
